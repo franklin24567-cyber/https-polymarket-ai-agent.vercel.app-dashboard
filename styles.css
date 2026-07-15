@@ -45,8 +45,42 @@ button, input {
 
 .home-panel {
   width: 100%;
-  max-width: 520px;
+  max-width: 620px;
   text-align: center;
+}
+
+.brand-center {
+  justify-content: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.mini-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 18px 14px;
+  text-align: center;
+}
+
+.mini-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .feature-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .app-shell {
