@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polymarket AI Agent Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">P</div>
+        <div>
+          <div class="brand-title">Polymarket AI</div>
+          <div class="brand-subtitle">Agent Console</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="#">Markets</a>
+        <a class="nav-link" href="#">Signals</a>
+        <a class="nav-link" href="#">Portfolio</a>
+        <a class="nav-link" href="#">Settings</a>
+      </nav>
+
+      <div class="sidebar-footer panel-inner">
+        <p class="muted small">Local build</p>
+        <p class="small">v1.0.0</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-box">
+          <input type="text" placeholder="Search markets, trades..." />
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications">🔔</button>
+          <button class="profile-btn">
+            <span class="avatar">A</span>
+            <span>Account</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero panel">
+        <div>
+          <p class="eyebrow">Trading Dashboard</p>
+          <h1>Polymarket AI Agent</h1>
+          <p class="muted">
+            Track markets, monitor activity, and manage positions from one local dashboard.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <button class="primary-btn">New Trade</button>
+          <button class="secondary-btn">Connect Wallet</button>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <div class="panel stat-card">
+          <p class="muted small">Active Markets</p>
+          <div class="stat-row">
+            <h3>128</h3>
+            <span class="stat-change">+12%</span>
+          </div>
+        </div>
+
+        <div class="panel stat-card">
+          <p class="muted small">24h Volume</p>
+          <div class="stat-row">
+            <h3>$42.8K</h3>
+            <span class="stat-change">+8.2%</span>
+          </div>
+        </div>
+
+        <div class="panel stat-card">
+          <p class="muted small">Open Positions</p>
+          <div class="stat-row">
+            <h3>19</h3>
+            <span class="stat-change">+3</span>
+          </div>
+        </div>
+
+        <div class="panel stat-card">
+          <p class="muted small">Win Rate</p>
+          <div class="stat-row">
+            <h3>64%</h3>
+            <span class="stat-change">+5%</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Recent Trades</h2>
+            <a href="#" class="text-link">View all</a>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Market</th>
+                  <th>Side</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BTC above $70k</td>
+                  <td><span class="pill pill-yes">YES</span></td>
+                  <td>$120</td>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <td>US election odds</td>
+                  <td><span class="pill pill-no">NO</span></td>
+                  <td>$250</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>ETH &gt; $4k</td>
+                  <td><span class="pill pill-yes">YES</span></td>
+                  <td>$80</td>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <td>Fed cuts rates</td>
+                  <td><span class="pill pill-yes">YES</span></td>
+                  <td>$310</td>
+                  <td>Settled</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Activity</h2>
+            <a href="#" class="text-link">Refresh</a>
+          </div>
+
+          <ul class="activity-list">
+            <li>New signal generated for BTC market</li>
+            <li>Position adjusted on election odds</li>
+            <li>Portfolio risk updated successfully</li>
+            <li>Price alert triggered on ETH</li>
+          </ul>
+
+          <div class="chart-placeholder">
+            <div class="chart-bar bar1"></div>
+            <div class="chart-bar bar2"></div>
+            <div class="chart-bar bar3"></div>
+            <div class="chart-bar bar4"></div>
+            <div class="chart-bar bar5"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
