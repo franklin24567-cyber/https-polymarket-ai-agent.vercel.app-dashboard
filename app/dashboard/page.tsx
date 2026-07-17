@@ -28,6 +28,9 @@ export default function DashboardPage() {
           <a className="nav-link" href="#">
             Settings
           </a>
+          <Link className="nav-link" href="/support">
+            Support
+          </Link>
         </nav>
 
         <div className="sidebar-footer panel-inner">
